@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout dengan Image dan Paragraf Justify</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3cqi;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548); /* Menambahkan bayangan dengan warna transparan */
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .container1 {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .container1 .left-image {
+    float: left;
+    margin-right: 20px;
+  }
+  .container1 .left-image img {
+    width: 300px;
+    border-radius: 30px;
+  }
+  .container1 .right-content {
+    overflow: hidden;
+    margin-top: 70px;
+  }
+  .container1 p {
+    text-align: justify;
+  }
+  .container2 p {
+    text-align: justify;
+  }
+  .container3 .bottom-images {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .container3 .bottom-images img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 30px; /* Membuat sudut gambar menjadi sedikit melingkar */
+  }
+  .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(126, 110, 113); /* Ubah warna latar belakang tombol menjadi pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Container 1: Gambar disebelah kiri dan p sebelah kanan gambar -->
+  <h2>Nail Art</h2>
+  <div class="container1">
+    <div class="left-image">
+      <img src="https://i.pinimg.com/564x/f6/71/81/f67181e5969be6457e667fd0d8e20288.jpg" alt="Gambar Kiri">
+    </div>
+    <div class="right-content">
+      <p>Nail art adalah seni mendekorasi kuku dengan cara melukis atau mengecat kuku menggunakan bahan cat khusus untuk kuku. Dalam seni ini, kuku dapat dihias dengan berbagai gambar, lukisan, atau hiasan, baik secara langsung pada kuku atau pada kuku palsu yang disesuaikan dengan ukuran kuku. </p>
+    </div>
+  </div>
+
+  <!-- Container 2: Paragraf -->
+  <div class="container2">
+    <p>Seni kuku adalah cara kreatif untuk melukis, menghias, meningkatkan, dan memperindah kuku. Ini adalah jenis karya seni yang dapat dilakukan pada kuku dan kuku kaki, biasanya setelah manikur atau pedikur.
+      Nail art adalah seni dekorasi kuku yang melibatkan berbagai teknik dan desain untuk menghias kuku dengan berbagai motif dan warna yang kreatif. 
+    </p>
+  </div>
+
+  <!-- Container 3: 3 bari gambar -->
+  <div class="container3">
+    <div class="bottom-images">
+      <img src="https://i.pinimg.com/736x/35/ba/05/35ba051c5ee77231548b23b125f9882f.jpg" alt="Gambar Bawah 1">
+      <img src="https://i.pinimg.com/564x/9b/4a/6e/9b4a6e7e4d3b2356dff7e372db8b7427.jpg" alt="Gambar Bawah 2">
+      <img src="https://i.pinimg.com/564x/f8/bb/c8/f8bbc855728168078156da444ac805d6.jpg" alt="Gambar Bawah 3">
+    </div>
+  </div>
+
+  <button class="btn" onclick="showAlert()"> Hello 💅</button>
+
+</div>
+
+<script>
+  function showAlert() {
+    alert("NAIL ART!!! 💅💅💅💅");
+  }
+</script>
+
+</body>
+</html>
